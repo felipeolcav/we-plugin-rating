@@ -2,7 +2,7 @@
  * WePluginRatingModel
  *
  * @module      :: Rating
- * @description :: [Add info about you model here]
+ * @description :: Rating Records
  *
  */
 
@@ -15,10 +15,12 @@ module.exports = {
     }
     manager: {
       model: 'ratingManager'
+      required: true,
     },
     vocabulary: {,
       collection: 'term',
       via: 'terms_rated'
+      required: true,
     },
     rate: {
       type: 'integer',

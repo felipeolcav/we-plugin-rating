@@ -9,9 +9,13 @@
 module.exports = {
   schema: true,
   attributes: {
-    modelName: 'string',
+    modelName: {
+      type: 'string',
+      required: true
+    },
     vocabulary: {
-      model: 'vocabulary'
+      model: 'vocabulary',
+      required: true
     },
     active: {
       type: 'boolean',
